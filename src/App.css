@@ -93,6 +93,15 @@ header .themeSelector .activeTheme{
   border: none;
   padding: 10px 20px; /* Adjust padding for better spacing */
   border-radius: 5px; /* Ensure consistent border radius */
+  cursor: pointer;
+  font-size: 18px;
+}
+.addTask form button {
+  background-color: #03ba5c;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  border-radius: 5px; /* Ensure consistent border radius */
   flex-shrink: 0; /* Prevent button from shrinking */
   cursor: pointer;
 }
@@ -106,6 +115,7 @@ header .themeSelector .activeTheme{
   background-color: #FFFFFF;
   margin: 20px auto;
   box-shadow: var(--box-shadow);
+  
 }
 
 .showTask div.head{
