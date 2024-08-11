@@ -68,27 +68,24 @@ header .themeSelector .activeTheme{
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.addTask form {
+.addTask form{
   display: flex;
   gap: 7px;
-  flex-wrap: nowrap; /* Changed from wrap to nowrap to prevent wrapping */
-  align-items: center; /* Ensures vertical alignment */
 }
 
-.addTask form input {
-  flex-grow: 1; /* Takes up remaining space */
+.addTask form input{
+  flex-grow: 1;
   padding: 5px 5px;
   border: 1px solid #eaeaea;
   border-radius: 5px;
   font-size: 18px;
 }
+
 .addTask form input:focus{
   outline: 2.5px solid #09d639;
 }
 
-.addTask form button {
-  flex-shrink: 0; /* Prevents the button from shrinking */
-  min-width: 80px; /* Ensures button has enough space */
+.addTask form button{
   background-color: #03ba5c;
   color: #FFFFFF;
   border: none;
@@ -97,6 +94,7 @@ header .themeSelector .activeTheme{
   cursor: pointer;
   font-size: 18px;
 }
+
 .addTask form button:hover{
   background-color: #03b056;
 }
@@ -211,10 +209,4 @@ header .themeSelector .activeTheme{
   .showTask li{
     width: 100%;
   }
-}
-@media only screen and (max-width: 600px) {
-  .addTask form input, .addTask form button {
-    flex-basis: 100%; /* Makes each item take full width */
-    margin-bottom: 10px;
-  }
-}
+} 
