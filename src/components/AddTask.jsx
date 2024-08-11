@@ -29,7 +29,7 @@ export const AddTask = (props) => {
 
     return (
         <section className="addTask">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="formItems">
                 <input type="text" name="task" value={task.name || ""} placeholder="Add Task" autoComplete="off" maxLength="25" onChange={(e)=>setTask({...task, name:  e.target.value})} />
                 <button type="submit" >{task.id? "Update" : "Add"}</button>
             </form>

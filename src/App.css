@@ -66,8 +66,14 @@ header .themeSelector .activeTheme{
   background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  
 }
-
+.formItems{
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: center;
+}
 .addTask form {
   display: flex;
   align-items: center; /* Ensure items are centered vertically */
