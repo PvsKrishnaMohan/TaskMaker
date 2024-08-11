@@ -71,18 +71,17 @@ header .themeSelector .activeTheme{
 .addTask form {
   display: flex;
   gap: 7px;
-  flex-wrap: wrap; /* Allows items to wrap to the next line as needed */
+  flex-wrap: nowrap; /* Changed from wrap to nowrap to prevent wrapping */
+  align-items: center; /* Ensures vertical alignment */
 }
 
 .addTask form input {
-  flex-grow: 1;
-  flex-basis: calc(100% - 90px); /* Adjust this value based on your button width */
+  flex-grow: 1; /* Takes up remaining space */
   padding: 5px 5px;
   border: 1px solid #eaeaea;
   border-radius: 5px;
   font-size: 18px;
 }
-
 .addTask form input:focus{
   outline: 2.5px solid #09d639;
 }
@@ -98,7 +97,6 @@ header .themeSelector .activeTheme{
   cursor: pointer;
   font-size: 18px;
 }
-
 .addTask form button:hover{
   background-color: #03b056;
 }
