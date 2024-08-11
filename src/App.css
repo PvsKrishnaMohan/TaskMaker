@@ -68,33 +68,32 @@ header .themeSelector .activeTheme{
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.addTask form{
+.addTask form {
   display: flex;
+  align-items: center; /* Ensure items are centered vertically */
   gap: 7px;
 }
 
-.addTask form input{
+.addTask form input {
   flex-grow: 1;
-  padding: 5px 5px;
+  padding: 10px; /* Adjust padding for better spacing */
   border: 1px solid #eaeaea;
   border-radius: 5px;
   font-size: 18px;
 }
-
 .addTask form input:focus{
   outline: 2.5px solid #09d639;
 }
 
-.addTask form button{
+.addTask form button {
   background-color: #03ba5c;
   color: #FFFFFF;
   border: none;
-  padding: 5px 20px;
-  border-radius: 5px;
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  border-radius: 5px; /* Ensure consistent border radius */
   cursor: pointer;
   font-size: 18px;
 }
-
 .addTask form button:hover{
   background-color: #03b056;
 }
