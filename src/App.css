@@ -68,12 +68,7 @@ header .themeSelector .activeTheme{
   border: 1px solid rgba(255, 255, 255, 0.125);
   
 }
-.formItems{
-  display: flex;
-  
-  flex-direction: row;
-  justify-content: center;
-}
+
 .addTask form {
   display: flex;
   align-items: center; /* Ensure items are centered vertically */
@@ -226,3 +221,10 @@ header .themeSelector .activeTheme{
     width: 100%;
   }
 } 
+@media only screen and (max-width: 600px) { /* adjust the max-width value as needed */
+  .addTask form {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
